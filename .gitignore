@@ -1,0 +1,8 @@
+.vs/
+bin/
+obj/
+packages/
+*.user
+Web.Secrets.config
+ELibraryManagement/imgs/books/*
+!ELibraryManagement/imgs/books/.gitkeep

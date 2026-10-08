@@ -1,0 +1,282 @@
+<Project ToolsVersion="15.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" Condition="Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{3BCB6602-C95E-46CA-895D-38DAF6EAF899}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ELibraryManagement</RootNamespace>
+    <AssemblyName>ELibraryManagement</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <Use64BitIISExpress />
+    <IISExpressSSLPort>44383</IISExpressSSLPort>
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform">
+      <HintPath>..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="askai.aspx" />
+    <Content Include="imgs\hero.svg" />
+    <Content Include="imgs\banner.svg" />
+    <Content Include="imgs\ai-librarian.svg" />
+    <Content Include="adminauthormanagement.aspx" />
+    <Content Include="adminbookinventory.aspx" />
+    <Content Include="adminbookissuing.aspx" />
+    <Content Include="AdminLogin.aspx" />
+    <Content Include="adminmembermanagement.aspx" />
+    <Content Include="adminpublishermanagement.aspx" />
+    <Content Include="bootstrap\css\cdn.jsdelivr.net_npm_bootstrap%404.3.1_dist_css_bootstrap.min.css" />
+    <Content Include="bootstrap\js\cdn.jsdelivr.net_npm_bootstrap%404.3.1_dist_js_bootstrap.min.js" />
+    <Content Include="bootstrap\js\cdn.jsdelivr.net_npm_popper.js%401.14.7_dist_umd_popper.min.js" />
+    <Content Include="bootstrap\js\code.jquery.com_jquery-3.3.1.slim.min.js" />
+    <Content Include="css\customstylesheet.css" />
+    <Content Include="datatables\css\cdn.datatables.net_1.13.6_css_jquery.dataTables.min.css" />
+    <Content Include="datatables\js\cdn.datatables.net_1.13.6_js_jquery.dataTables.min.js" />
+    <Content Include="fontawesome\css\all.css" />
+    <Content Include="fontawesome\css\all.min.css" />
+    <Content Include="fontawesome\css\brands.css" />
+    <Content Include="fontawesome\css\brands.min.css" />
+    <Content Include="fontawesome\css\fontawesome.css" />
+    <Content Include="fontawesome\css\fontawesome.min.css" />
+    <Content Include="fontawesome\css\regular.css" />
+    <Content Include="fontawesome\css\regular.min.css" />
+    <Content Include="fontawesome\css\solid.css" />
+    <Content Include="fontawesome\css\solid.min.css" />
+    <Content Include="fontawesome\css\svg-with-js.css" />
+    <Content Include="fontawesome\css\svg-with-js.min.css" />
+    <Content Include="fontawesome\css\v4-font-face.css" />
+    <Content Include="fontawesome\css\v4-font-face.min.css" />
+    <Content Include="fontawesome\css\v4-shims.css" />
+    <Content Include="fontawesome\css\v4-shims.min.css" />
+    <Content Include="fontawesome\css\v5-font-face.css" />
+    <Content Include="fontawesome\css\v5-font-face.min.css" />
+    <Content Include="fontawesome\LICENSE.txt" />
+    <Content Include="homepage.aspx" />
+    <Content Include="imgs\adminuser.png" />
+    <Content Include="imgs\book-online.png" />
+    <Content Include="imgs\books.png" />
+    <Content Include="imgs\books1.png" />
+    <Content Include="imgs\defaulters-list.png" />
+    <Content Include="imgs\digital-data.png" />
+    <Content Include="imgs\digital-inventory.png" />
+    <Content Include="imgs\generaluser.png" />
+    <Content Include="imgs\library.png" />
+    <Content Include="imgs\publisher.png" />
+    <Content Include="imgs\search-online.png" />
+    <Content Include="imgs\sign-up.png" />
+    <Content Include="imgs\writer.png" />
+    <Content Include="UserLogin.aspx" />
+    <Content Include="userprofile.aspx" />
+    <Content Include="usersignup.aspx" />
+    <Content Include="viewbooks.aspx" />
+    <Content Include="Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="adminauthormanagement.aspx.cs">
+      <DependentUpon>adminauthormanagement.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="adminauthormanagement.aspx.designer.cs">
+      <DependentUpon>adminauthormanagement.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="adminbookinventory.aspx.cs">
+      <DependentUpon>adminbookinventory.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="adminbookinventory.aspx.designer.cs">
+      <DependentUpon>adminbookinventory.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="adminbookissuing.aspx.cs">
+      <DependentUpon>adminbookissuing.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="adminbookissuing.aspx.designer.cs">
+      <DependentUpon>adminbookissuing.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AdminLogin.aspx.cs">
+      <DependentUpon>AdminLogin.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdminLogin.aspx.designer.cs">
+      <DependentUpon>AdminLogin.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="adminmembermanagement.aspx.cs">
+      <DependentUpon>adminmembermanagement.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="adminmembermanagement.aspx.designer.cs">
+      <DependentUpon>adminmembermanagement.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="adminpublishermanagement.aspx.cs">
+      <DependentUpon>adminpublishermanagement.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="adminpublishermanagement.aspx.designer.cs">
+      <DependentUpon>adminpublishermanagement.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="homepage.aspx.cs">
+      <DependentUpon>homepage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="homepage.aspx.designer.cs">
+      <DependentUpon>homepage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Infrastructure\Auth.cs" />
+    <Compile Include="Infrastructure\Db.cs" />
+    <Compile Include="Infrastructure\PageBases.cs" />
+    <Compile Include="Infrastructure\PasswordHasher.cs" />
+    <Compile Include="Services\AiService.cs" />
+    <Compile Include="askai.aspx.cs">
+      <DependentUpon>askai.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="askai.aspx.designer.cs">
+      <DependentUpon>askai.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Site1.Master.cs">
+      <DependentUpon>Site1.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Site1.Master.designer.cs">
+      <DependentUpon>Site1.Master</DependentUpon>
+    </Compile>
+    <Compile Include="UserLogin.aspx.cs">
+      <DependentUpon>UserLogin.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserLogin.aspx.designer.cs">
+      <DependentUpon>UserLogin.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="userprofile.aspx.cs">
+      <DependentUpon>userprofile.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="userprofile.aspx.designer.cs">
+      <DependentUpon>userprofile.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="usersignup.aspx.cs">
+      <DependentUpon>usersignup.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="usersignup.aspx.designer.cs">
+      <DependentUpon>usersignup.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="viewbooks.aspx.cs">
+      <DependentUpon>viewbooks.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="viewbooks.aspx.designer.cs">
+      <DependentUpon>viewbooks.aspx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="fontawesome\webfonts\fa-brands-400.ttf" />
+    <Content Include="fontawesome\webfonts\fa-brands-400.woff2" />
+    <Content Include="fontawesome\webfonts\fa-regular-400.ttf" />
+    <Content Include="fontawesome\webfonts\fa-regular-400.woff2" />
+    <Content Include="fontawesome\webfonts\fa-solid-900.ttf" />
+    <Content Include="fontawesome\webfonts\fa-solid-900.woff2" />
+    <Content Include="fontawesome\webfonts\fa-v4compatibility.ttf" />
+    <Content Include="fontawesome\webfonts\fa-v4compatibility.woff2" />
+    <None Include="packages.config" />
+    <None Include="Web.Secrets.config.example" />
+    <Content Include="Site1.Master" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>58491</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>https://localhost:44383/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props'))" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
